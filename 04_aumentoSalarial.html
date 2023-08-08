@@ -6,11 +6,11 @@
     */
 
     //ENTRADA
-
-    
+    const Salarial = Number(prompt("informe o seu salario"))
+    const aumento = parseInt(prompt("quantos porcento de aumento"))
     //PROCESSAMENTO
-    
-    
+    const novosalario = Salarial * (aumento/100)
+    const resultado = novosalario + novosalario
     //SAÍDA
-    
+    document.write(`seu salario é de: R$${resultado.toFixed(2)}`)
 </script>

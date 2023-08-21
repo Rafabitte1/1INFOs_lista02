@@ -6,11 +6,14 @@
     */
 
     //ENTRADA
-
-    
+    const cigarrofumadosdia = parseInt(("informe a quantidade de cigarros fumados por dia"))
+    const cigarroanosfumados = parseInt(prompt("informe  quantidade de anos que fuma"))
+    let cigarro = 10
     //PROCESSAMENTO
-
-    
+    const cigarroaodia = cigarrofumadosdia * cigarro
+    const anosfumando = cigarroanosfumados *365 *24 *60
+    const totalminutosperdidos = anosfumando *cigarroaodia
+    const totaldiasperdidos = totalminutosperdidos / (24*60)
     //SAÍDA
-
+    alert(`Você perdeu aproximadamente "  ${totaldiasperdidos.toFixed(2)}  " dias de vida devido ao hábito de fumar."`)
 </script>

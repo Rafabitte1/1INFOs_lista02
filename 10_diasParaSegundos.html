@@ -6,11 +6,13 @@
     */
 
     //ENTRADA
-
-    
+    const dia = parseInt(prompt("informe o dia"))
+    const horas = parseInt(prompt("informe a hora"))
+    const minutos = parseInt(prompt("informe os minutos"))
+    const segundos = parseInt(prompt("informe segundos"))
     //PROCESSAMENTO
-
+    const totalsegundos = (dia * 24 * 60 * 60)+(horas * 60 *60)+(minutos* 60)+ segundos
     
     //SAÍDA
-
+    alert(`segudos são de ${totalsegundos} segundos`)
 </script>

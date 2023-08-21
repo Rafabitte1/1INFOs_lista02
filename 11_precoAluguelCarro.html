@@ -6,11 +6,12 @@
     */
 
     //ENTRADA
-
-    
+    const diaAlugadas = parseInt(prompt("informe a quantidade de dias que o carro foi alugado"))
+    const kmpecorrido = Number(prompt("informe a quantidade de quilômetros rodados"))
     //PROCESSAMENTO
-
-    
+    const dataalugada = diaAlugadas * 60
+    const km = kmpecorrido *0.15
+    const totalpreco = dataalugada + km
     //SAÍDA
-
+    alert(`preço do alugel é R$${totalpreco}`)
 </script>

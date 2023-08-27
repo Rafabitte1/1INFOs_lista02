@@ -7,11 +7,13 @@
     // IR: 11 % do salário bruto
 
     //ENTRADA
-
-    
+    const HorasMês = parseInt(prompt("informe horas trabalhadas por mês"))
+    const recebe = Number(prompt("quantos recebe?"))
     //PROCESSAMENTO
-
-    
+    const salário = recebe * HorasMês
+    const INSS = salário * 0.8
+    const IR = salário * 0.11
+    const total = INSS + IR
     //SAÍDA
-
+    document.write(`seu salario é R$${total.toFixed(2)}`)
 </script>
